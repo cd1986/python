@@ -308,16 +308,64 @@ print(empty_dict)
 
 ## 🟡 Medium (Level 2)
 
-11. Use `.setdefault()` to assign a default value to a missing key.  
-12. Use `.update()` to merge two dictionaries.  
-13. Use `.get()` with a default return value if key is not found.  
-14. What’s the difference between `.pop()` and `.popitem()`? Try both.  
-15. Use `del` to remove a key from a dictionary.  
-16. Get the number of keys in a dictionary. `(Use len())`  
-17. Convert a list of tuples into a dictionary. `(Use dict() constructor)`  
-18. Create a dictionary from two lists: one of keys and one of values. `(Use zip() and dict())`  
-19. Check if two dictionaries have the same keys. `(Use .keys() and ==)`  
-20. Check if a dictionary is empty. `(Use not or len())`
+11. Use `.setdefault()` to assign a default value to a missing key.
+# Use .setdefault() to assign a default value to a missing key.
+
+
+retail_inventory = {
+    "Electronics": {
+        "Laptop": [55000, 30, "Dell"],
+        "Mobile": [25000, 50, "Samsung"],
+        "Tablet": [18000, 20, "Lenovo"],
+        "Smart Watch": [7999, 40, "Noise"]
+    },
+    "Apparel": {
+        "T-Shirt": [499, 100, "H&M"],
+        "Jeans": [1199, 60, "Levi's"],
+        "Jacket": [2499, 25, "Puma"]
+    },
+    "Home Appliances": {
+        "Microwave": [8500, 15, "LG"],
+        "Vacuum Cleaner": [7000, 10, "Philips"],
+        "Refrigerator": [30000, 8, "Samsung"],
+        #"Juicer":[]
+    },
+    "Interiors":{}
+}
+
+retail_inventory.setdefault("Hello")
+print(retail_inventory)
+
+13. Use `.update()` to merge two dictionaries.
+# 13. Use `.update()` to merge two dictionaries.  
+
+retail_inventory_1 = {
+    "Electronics": {
+        "Laptop": [55000, 30, "Dell"],
+        "Mobile": [25000, 50, "Samsung"],
+        "Tablet": [18000, 20, "Lenovo"],
+        "Smart Watch": [7999, 40, "Noise"]
+    }}
+    
+retail_inventory_2 = { 
+    "Apparel": {
+        "T-Shirt": [499, 100, "H&M"],
+        "Jeans": [1199, 60, "Levi's"],
+        "Jacket": [2499, 25, "Puma"]
+    }}
+
+retail_inventory_1.update(retail_inventory_2)
+
+print(retail_inventory_1)
+
+15. Use `.get()` with a default return value if key is not found.  
+16. What’s the difference between `.pop()` and `.popitem()`? Try both.  
+17. Use `del` to remove a key from a dictionary.  
+18. Get the number of keys in a dictionary. `(Use len())`  
+19. Convert a list of tuples into a dictionary. `(Use dict() constructor)`  
+20. Create a dictionary from two lists: one of keys and one of values. `(Use zip() and dict())`  
+21. Check if two dictionaries have the same keys. `(Use .keys() and ==)`  
+22. Check if a dictionary is empty. `(Use not or len())`
 
 ---
 
