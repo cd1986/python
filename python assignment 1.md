@@ -384,7 +384,18 @@ retail_inventory_1.update(retail_inventory_2)
 
 print(retail_inventory_1)
 
+
+
 15. Use `.get()` with a default return value if key is not found.
+retail_inventory_1 = {
+    "Electronics": {
+    "Laptop": [55000, 30, "Dell"],
+    "Mobile": [25000, 50, "Samsung"],
+    "Tablet": [18000, 20, "Lenovo"],
+    "Smart Watch": [7999, 40, "Noise"]
+}}
+print(retail_inventory_1.get("Fablet", "Currently no Fablet available"))
+
 
 
 17. What’s the difference between `.pop()` and `.popitem()`? Try both.  
