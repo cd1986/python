@@ -21,15 +21,288 @@ retail_inventory = {
 ## 🟢 Easy (Level 1)
 
 1. How do you get all the keys from a dictionary? `(Use .keys())`
-2. How do you get all the values from a dictionary? `(Use .values())`
+retail_inventory = {
+    "Electronics": {
+        "Laptop": [55000, 30, "Dell"],
+        "Mobile": [25000, 50, "Samsung"],
+        "Tablet": [18000, 20, "Lenovo"],
+        "Smart Watch": [7999, 40, "Noise"]
+    },
+    "Apparel": {
+        "T-Shirt": [499, 100, "H&M"],
+        "Jeans": [1199, 60, "Levi's"],
+        "Jacket": [2499, 25, "Puma"]
+    },
+    "Home Appliances": {
+        "Microwave": [8500, 15, "LG"],
+        "Vacuum Cleaner": [7000, 10, "Philips"],
+        "Refrigerator": [30000, 8, "Samsung"]
+    }
+}
+
+print(type(retail_inventory))
+print("retail_inventory : ", retail_inventory.keys())
+
+
+
+2. How do you get all the values from a dictionary? `(Use .values())
+retail_inventory = {
+    "Electronics": {
+        "Laptop": [55000, 30, "Dell"],
+        "Mobile": [25000, 50, "Samsung"],
+        "Tablet": [18000, 20, "Lenovo"],
+        "Smart Watch": [7999, 40, "Noise"]
+    },
+    "Apparel": {
+        "T-Shirt": [499, 100, "H&M"],
+        "Jeans": [1199, 60, "Levi's"],
+        "Jacket": [2499, 25, "Puma"]
+    },
+    "Home Appliances": {
+        "Microwave": [8500, 15, "LG"],
+        "Vacuum Cleaner": [7000, 10, "Philips"],
+        "Refrigerator": [30000, 8, "Samsung"]
+    }
+}
+
+print(type(retail_inventory))
+print("retail_inventory : ", retail_inventory.values())
+
+
+
 3. How do you retrieve the value for a specific key safely? `(Use .get(key))`
+retail_inventory = {
+    "Electronics": {
+        "Laptop": [55000, 30, "Dell"],
+        "Mobile": [25000, 50, "Samsung"],
+        "Tablet": [18000, 20, "Lenovo"],
+        "Smart Watch": [7999, 40, "Noise"]
+    },
+    "Apparel": {
+        "T-Shirt": [499, 100, "H&M"],
+        "Jeans": [1199, 60, "Levi's"],
+        "Jacket": [2499, 25, "Puma"]
+    },
+    "Home Appliances": {
+        "Microwave": [8500, 15, "LG"],
+        "Vacuum Cleaner": [7000, 10, "Philips"],
+        "Refrigerator": [30000, 8, "Samsung"]
+    }
+}
+
+print(type(retail_inventory))
+print("retail_inventory : ", retail_inventory.get("Electronics"))
+
+
+
+   
 4. How do you check if a key exists in a dictionary? `(Use in)`
-5. How do you remove a key and return its value? `(Use .pop(key))`
-6. How do you copy a dictionary? `(Use .copy())`
-7. How do you remove all key-value pairs from a dictionary? `(Use .clear())`
-8. How do you add or update a value for a key? `(Use .update({key: value}))`
-9. How do you retrieve both keys and values? `(Use .items())`
-10. How do you create an empty dictionary? `(Use {} or dict())`
+
+
+retail_inventory = {
+    "Electronics": {
+        "Laptop": [55000, 30, "Dell"],
+        "Mobile": [25000, 50, "Samsung"],
+        "Tablet": [18000, 20, "Lenovo"],
+        "Smart Watch": [7999, 40, "Noise"]
+    },
+    "Apparel": {
+        "T-Shirt": [499, 100, "H&M"],
+        "Jeans": [1199, 60, "Levi's"],
+        "Jacket": [2499, 25, "Puma"]
+    },
+    "Home Appliances": {
+        "Microwave": [8500, 15, "LG"],
+        "Vacuum Cleaner": [7000, 10, "Philips"],
+        "Refrigerator": [30000, 8, "Samsung"]
+    }
+}
+
+# exist_check_list = ['laptop','Tablet','Fan','Jeans','Microwave']
+
+
+# for exist_check_list in exist_check_list
+
+
+if 'name' in retail_inventory:
+    print("exitst")
+else:
+    print("does not exist")
+
+
+
+6. How do you remove a key and return its value? `(Use .pop(key))`
+retail_inventory = {
+    "Electronics": {
+        "Laptop": [55000, 30, "Dell"],
+        "Mobile": [25000, 50, "Samsung"],
+        "Tablet": [18000, 20, "Lenovo"],
+        "Smart Watch": [7999, 40, "Noise"]
+    },
+    "Apparel": {
+        "T-Shirt": [499, 100, "H&M"],
+        "Jeans": [1199, 60, "Levi's"],
+        "Jacket": [2499, 25, "Puma"]
+    },
+    "Home Appliances": {
+        "Microwave": [8500, 15, "LG"],
+        "Vacuum Cleaner": [7000, 10, "Philips"],
+        "Refrigerator": [30000, 8, "Samsung"]
+    }
+}
+
+8. How do you copy a dictionary? `(Use .copy())`
+# 8. How do you copy a dictionary? `(Use .copy())`
+
+
+
+
+retail_inventory = {
+    "Electronics": {
+        "Laptop": [55000, 30, "Dell"],
+        "Mobile": [25000, 50, "Samsung"],
+        "Tablet": [18000, 20, "Lenovo"],
+        "Smart Watch": [7999, 40, "Noise"]
+    },
+    "Apparel": {
+        "T-Shirt": [499, 100, "H&M"],
+        "Jeans": [1199, 60, "Levi's"],
+        "Jacket": [2499, 25, "Puma"]
+    },
+    "Home Appliances": {
+        "Microwave": [8500, 15, "LG"],
+        "Vacuum Cleaner": [7000, 10, "Philips"],
+        "Refrigerator": [30000, 8, "Samsung"]
+    }
+}
+
+
+
+copy_dict = retail_inventory.copy()
+
+print(copy_dict)
+
+
+10. How do you remove all key-value pairs from a dictionary? `(Use .clear())`
+11. # How do you remove all key-value pairs from a dictionary? `(Use .clear())`
+
+
+retail_inventory = {
+    "Electronics": {
+        "Laptop": [55000, 30, "Dell"],
+        "Mobile": [25000, 50, "Samsung"],
+        "Tablet": [18000, 20, "Lenovo"],
+        "Smart Watch": [7999, 40, "Noise"]
+    },
+    "Apparel": {
+        "T-Shirt": [499, 100, "H&M"],
+        "Jeans": [1199, 60, "Levi's"],
+        "Jacket": [2499, 25, "Puma"]
+    },
+    "Home Appliances": {
+        "Microwave": [8500, 15, "LG"],
+        "Vacuum Cleaner": [7000, 10, "Philips"],
+        "Refrigerator": [30000, 8, "Samsung"]
+    }
+}
+
+
+
+clear_retail_inventory = retail_inventory.clear()
+
+print(clear_retail_inventory)
+
+
+
+
+
+12. How do you add or update a value for a key? `(Use .update({key: value}))`
+# 12. How do you add or update a value for a key? `(Use .update({key: value}))`
+
+
+# How do you remove all key-value pairs from a dictionary? `(Use .clear())`
+
+
+retail_inventory = {
+    "Electronics": {
+        "Laptop": [55000, 30, "Dell"],
+        "Mobile": [25000, 50, "Samsung"],
+        "Tablet": [18000, 20, "Lenovo"],
+        "Smart Watch": [7999, 40, "Noise"]
+    },
+    "Apparel": {
+        "T-Shirt": [499, 100, "H&M"],
+        "Jeans": [1199, 60, "Levi's"],
+        "Jacket": [2499, 25, "Puma"]
+    },
+    "Home Appliances": {
+        "Microwave": [8500, 15, "LG"],
+        "Vacuum Cleaner": [7000, 10, "Philips"],
+        "Refrigerator": [30000, 8, "Samsung"]
+    }
+}
+
+
+update_retail_inventory = retail_inventory.update({"Home Dresses":{
+        "Microwave": [8500, 15, "LG"],
+        "Vacuum Cleaner": [7000, 10, "Philips"],
+        "Refrigerator": [30000, 8, "Samsung"]}})
+
+print(update_retail_inventory)
+print(retail_inventory)
+
+
+#clear_retail_inventory = retail_inventory.update({})
+
+
+
+
+14. How do you retrieve both keys and values? `(Use .items())`
+15. # 14. How do you retrieve both keys and values? `(Use .items())`
+
+
+# 12. How do you add or update a value for a key? `(Use .update({key: value}))`
+
+
+# How do you remove all key-value pairs from a dictionary? `(Use .clear())`
+
+
+retail_inventory = {
+    "Electronics": {
+        "Laptop": [55000, 30, "Dell"],
+        "Mobile": [25000, 50, "Samsung"],
+        "Tablet": [18000, 20, "Lenovo"],
+        "Smart Watch": [7999, 40, "Noise"]
+    },
+    "Apparel": {
+        "T-Shirt": [499, 100, "H&M"],
+        "Jeans": [1199, 60, "Levi's"],
+        "Jacket": [2499, 25, "Puma"]
+    },
+    "Home Appliances": {
+        "Microwave": [8500, 15, "LG"],
+        "Vacuum Cleaner": [7000, 10, "Philips"],
+        "Refrigerator": [30000, 8, "Samsung"]
+    }
+}
+
+
+print(retail_inventory.items())
+
+
+#clear_retail_inventory = retail_inventory.update({})
+
+
+
+16. How do you create an empty dictionary? `(Use {} or dict())`
+# 16. How do you create an empty dictionary? `(Use {} or dict())`
+
+
+empty_dict ={}
+
+print(empty_dict)
+
+
 
 ---
 
