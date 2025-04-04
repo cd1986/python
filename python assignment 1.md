@@ -226,45 +226,7 @@ retail_inventory.update({"Home Appliances": {
 
 print(retail_inventory.itemds())
 
-
-# 9. How do you remove all key-value pairs from a dictionary? `(Use .clear())`
-
-
-retail_inventory = {
-    "Electronics": {
-        "Laptop": [55000, 30, "Dell"],
-        "Mobile": [25000, 50, "Samsung"],
-        "Tablet": [18000, 20, "Lenovo"],
-        "Smart Watch": [7999, 40, "Noise"]
-    },
-    "Apparel": {
-        "T-Shirt": [499, 100, "H&M"],
-        "Jeans": [1199, 60, "Levi's"],
-        "Jacket": [2499, 25, "Puma"]
-    },
-    "Home Appliances": {
-        "Microwave": [8500, 15, "LG"],
-        "Vacuum Cleaner": [7000, 10, "Philips"],
-        "Refrigerator": [30000, 8, "Samsung"]
-    }
-}
-
-
-update_retail_inventory = retail_inventory.update({"Home Dresses":{
-        "Microwave": [8500, 15, "LG"],
-        "Vacuum Cleaner": [7000, 10, "Philips"],
-        "Refrigerator": [30000, 8, "Samsung"]}})
-
-print(update_retail_inventory)
-print(retail_inventory)
-
-
-#clear_retail_inventory = retail_inventory.update({})
-
-
-
-
-10. How do you retrieve both keys and values? `(Use .items())`
+9. How do you retrieve both keys and values? `(Use .items())`
 retail_inventory = {
     "Electronics": {
         "Laptop": [55000, 30, "Dell"],
@@ -288,40 +250,8 @@ retail_inventory = {
 print(retail_inventory.items())
 
 
-#clear_retail_inventory = retail_inventory.update({})
 
-
-
-
-
-# 11. How do you add or update a value for a key? `(Use .update({key: value}))`
-
-
-# 12. How do you remove all key-value pairs from a dictionary? `(Use .clear())`
-retail_inventory = {
-    "Electronics": {
-        "Laptop": [55000, 30, "Dell"],
-        "Mobile": [25000, 50, "Samsung"],
-        "Tablet": [18000, 20, "Lenovo"],
-        "Smart Watch": [7999, 40, "Noise"]
-    },
-    "Apparel": {
-        "T-Shirt": [499, 100, "H&M"],
-        "Jeans": [1199, 60, "Levi's"],
-        "Jacket": [2499, 25, "Puma"]
-    },
-    "Home Appliances": {
-        "Microwave": [8500, 15, "LG"],
-        "Vacuum Cleaner": [7000, 10, "Philips"],
-        "Refrigerator": [30000, 8, "Samsung"]
-    }
-}
-
-
-print(retail_inventory.clear())
-
-
-# 13. How do you create an empty dictionary? `(Use {} or dict())`
+# 10. How do you create an empty dictionary? `(Use {} or dict())`
 
 
 empty_dict ={}
@@ -362,9 +292,10 @@ retail_inventory = {
 retail_inventory.setdefault("Hello")
 print(retail_inventory)
 
-13. Use `.update()` to merge two dictionaries.
-# 13. Use `.update()` to merge two dictionaries.  
 
+
+
+12. Use `.update()` to merge two dictionaries. 
 retail_inventory_1 = {
     "Electronics": {
         "Laptop": [55000, 30, "Dell"],
@@ -386,7 +317,7 @@ print(retail_inventory_1)
 
 
 
-15. Use `.get()` with a default return value if key is not found.
+13. Use `.get()` with a default return value if key is not found.
 retail_inventory_1 = {
     "Electronics": {
     "Laptop": [55000, 30, "Dell"],
@@ -398,13 +329,13 @@ print(retail_inventory_1.get("Fablet", "Currently no Fablet available"))
 
 
 
-17. What’s the difference between `.pop()` and `.popitem()`? Try both.  
-18. Use `del` to remove a key from a dictionary.  
-19. Get the number of keys in a dictionary. `(Use len())`  
-20. Convert a list of tuples into a dictionary. `(Use dict() constructor)`  
-21. Create a dictionary from two lists: one of keys and one of values. `(Use zip() and dict())`  
-22. Check if two dictionaries have the same keys. `(Use .keys() and ==)`  
-23. Check if a dictionary is empty. `(Use not or len())`
+14. What’s the difference between `.pop()` and `.popitem()`? Try both.  
+15. Use `del` to remove a key from a dictionary.  
+16. Get the number of keys in a dictionary. `(Use len())`  
+17. Convert a list of tuples into a dictionary. `(Use dict() constructor)`  
+18. Create a dictionary from two lists: one of keys and one of values. `(Use zip() and dict())`  
+19. Check if two dictionaries have the same keys. `(Use .keys() and ==)`  
+20. Check if a dictionary is empty. `(Use not or len())`
 
 ---
 
