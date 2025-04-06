@@ -329,25 +329,147 @@ print(retail_inventory_1.get("Fablet", "Currently no Fablet available"))
 
 
 
-14. What’s the difference between `.pop()` and `.popitem()`? Try both.  
-15. Use `del` to remove a key from a dictionary.  
-16. Get the number of keys in a dictionary. `(Use len())`  
+14. What’s the difference between `.pop()` and `.popitem()`? Try both.
+my_dict = {'name': 'Alice', 'age': 25, 'city': 'New York'}
+item = my_dict.popitem()
+print(item)        # Output: ('city', 'New York')
+print(my_dict)     # {'name': 'Alice', 'age': 25}
+('city', 'New York')
+{'name': 'Alice', 'age': 25}
+
+
+my_dict = {'name': 'Alice', 'age': 25, 'city': 'New York'}
+age = my_dict.pop('age')
+print(age)         # Output: 25
+print(my_dict)     # {'name': 'Alice', 'city': 'New York'}
+25
+{'name': 'Alice', 'city': 'New York'}
+
+
+ 
+15. Use `del` to remove a key from a dictionary.
+person = {
+    'name': 'Alice',
+    'age': 25,
+    'city': 'New York'
+}
+
+# Remove the 'age' key
+del person['age']
+
+print(person)
+# Output: {'name': 'Alice', 'city': 'New York'}
+
+
+16. Get the number of keys in a dictionary. `(Use len())`
+person = {
+    'name': 'Alice',
+    'age': 25,
+    'city': 'New York'
+}
+
+print("length of dictionary person ", len(person))
+# Output: {'name': 'Alice', 'city': 'New York'}
+    
 17. Convert a list of tuples into a dictionary. `(Use dict() constructor)`  
+person = (('name','Alice'),('age',25),('city','New York'))
+
+# converting dic person to tuple
+person_dict=dict(person)
+
+
+print("length of dictionary person ", len(person))
+print(person)
+# Output: {'name': 'Alice', 'city': 'New York'}
+
+
 18. Create a dictionary from two lists: one of keys and one of values. `(Use zip() and dict())`  
+keys = ['name', 'age', 'city']
+values = ['Alice', 25, 'New York']
+
+# Combine keys and values using zip, then convert to dictionary
+person = dict(zip(keys, values))
+print(person)
+
+
 19. Check if two dictionaries have the same keys. `(Use .keys() and ==)`  
+dict_1 = {'name':'ravi'}
+dict_2 = {'age':30}
+
+dict_3 = {'name':'ravi'}
+dict_4 = {'name':'ravi'}
+
+
+print('checking if both dictionaries are equal or not: ', dict_1 == dict_2)
+print('checking if both dictionaries are equal or not: ', dict_3 == dict_4)
+
+
 20. Check if a dictionary is empty. `(Use not or len())`
+dict_1 = {'name':'ravi'}
+dict_2 = {}
+
+print('checking if dictionary empty or not: ', len(dict_1) != 0)
+print('checking if dictionary empty or not: ', len(dict_2) != 0)
+
 
 ---
 
 ## 🔴 Complex (Level 3 — Still no loops)
 
 21. Get a list of all unique values using `set()` and `.values()`.  
+person = {
+    'name': 'Alice',
+    'city': 'New York',
+    'nickname': 'Alice',
+    'country': 'USA'
+}
+
+# Get unique values
+unique_values = set(person.values())
+print(unique_values)
+
+
 22. Create a nested dictionary using dictionary literals.  
+company = {
+    'emp1': {'name': 'John', 'role': 'Engineer'},
+    'emp2': {'name': 'Emma', 'role': 'Designer'},
+    'emp3': {'name': 'Liam', 'role': 'Manager'}
+}
+
+print(company)
+
+
 23. Merge 3 dictionaries using chained `.update()`.  
+company_1 = {'emp1': {'name': 'John', 'role': 'Engineer'}}
+company_2 = {'emp2': {'name': 'Emma', 'role': 'Designer'}}
+company_3 = {'emp3': {'name': 'Liam', 'role': 'Manager'}}
+
+# Merge all into one dictionary
+all_company_employees = {}
+all_company_employees.update(company_1)
+all_company_employees.update(company_2)
+all_company_employees.update(company_3)
+print(all_company_employees)
+
+
 24. Use `.fromkeys()` to create a dictionary with default values.  
+subjects = ['math', 'science', 'english']
+default_score = 0
+scores = dict.fromkeys(subjects, default_score)
+print(scores)
+
+
 25. Use `.get()` to avoid a `KeyError` while accessing a deeply nested dictionary.  
+
+
 26. Copy a dictionary and modify the copy (check original doesn’t change).  
+
+
 27. Extract only the keys from a dictionary where the value is a specific type (e.g., list).  
+
 28. Convert a flat dictionary to a string using `str()` or `json.dumps()`.  
+
 29. Check if a dictionary has all keys from a given list using `all()` and `in`.  
+
+
 30. Use `max()` and `min()` to find keys or values with highest/lowest value.
