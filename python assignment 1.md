@@ -460,16 +460,96 @@ print(scores)
 
 
 25. Use `.get()` to avoid a `KeyError` while accessing a deeply nested dictionary.  
+student = {
+    'name': 'Alice',
+    'grades': {
+        'math': 90,
+        'science': 85
+    },
+    'address': {
+        'city': 'New York',
+        'zip': '10001'
+    }
+}
+
+
+zip_code = student.get('address', {}).get('zip')
+print(zip_code)
 
 
 26. Copy a dictionary and modify the copy (check original doesn’t change).  
+original = {
+    'name': 'Alice',
+    'age': 25,
+    'city': 'New York'
+}
+
+# Make a copy
+copied = original.copy()
+
+# Modify the copy
+copied['age'] = 30
+copied['city'] = 'Los Angeles'
+
+# Print both
+print("Original:", original)
+print("Copied:", copied)
 
 
-27. Extract only the keys from a dictionary where the value is a specific type (e.g., list).  
+27.** Extract only the keys from a dictionary where the value is a specific type (e.g., list).   (took help, took time to understand)**
+data = {
+    'name': 'Alice',
+    'age': 25,
+    'hobbies': ['reading', 'cycling'],
+    'skills': {'python': 'advanced'},
+    'languages': ['English', 'Spanish'],
+    'is_student': False
+}
+
+# Extract keys where value is a list
+list_keys = list(map(lambda x: x[0], filter(lambda x: isinstance(x[1], list), data.items())))
+
+print(list_keys)
+
+
 
 28. Convert a flat dictionary to a string using `str()` or `json.dumps()`.  
+import json
+
+my_dict = {'name': 'Alice', 'age': 25, 'city': 'New York'}
+
+json_str = json.dumps(my_dict)
+
+print(json_str)
+print(type(json_str))
+
 
 29. Check if a dictionary has all keys from a given list using `all()` and `in`.  
+person = {
+    'name': 'Alice',
+    'age': 25,
+    'city': 'New York'
+}
+
+required_keys = ['name', 'age']
+
+# Convert both to sets and check if required_keys are all in person
+has_all_keys = set(required_keys).issubset(person)
+
+print(has_all_keys)
 
 
 30. Use `max()` and `min()` to find keys or values with highest/lowest value.
+scores = {
+    'Alice': 85,
+    'Bob': 92,
+    'Charlie': 78,
+    'David': 90
+}
+
+highest_score = max(scores.values())
+lowest_score = min(scores.values())
+
+print("Highest score:", highest_score)
+print("Lowest score:", lowest_score)
+
