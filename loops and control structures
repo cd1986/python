@@ -1,0 +1,253 @@
+if 
+if else
+if elif else
+for 
+while
+continue 
+break
+
+if condition:
+    print("statement")
+
+
+x=10
+if x>20:
+    print("data")
+    print("Edukron")
+
+
+x="data science"
+if x.isalpha():
+    print("test")
+
+
+x="123"
+if x.isalnum() and len(x)>5:
+    print("test")
+x="123"
+if x.isalnum() and len(x)>5:
+    print("test")
+
+x="Data"
+if x.startswith("d".upper()):
+    print("test")
+else:
+    print("edukron")
+
+
+username = input()
+password = input()
+
+if username == "admin" and password == "admin123":
+    print("Login successful")
+else:
+    print("Invalid credentials")
+
+
+
+x=1
+y=20
+if x>2:
+    x=x+200
+else:
+    y=200+x
+print(x,y)
+
+
+x=1
+y=20
+if x>5:
+    x=x+5
+    y=x-2
+    x=y+2
+else:
+    x=x+1
+    y=y+2
+print(x,y)
+
+
+
+# Example 1 (Original)
+x = 1
+y = 20
+if x > 5:
+    x = x + 5
+    y = x - 2
+    x = y + 2
+else:
+    x = x + 1
+    y = y + 2
+print("Example 1:", x, y)
+
+# Example 2
+a = 10
+b = 5
+if a < b:
+    a += 2
+    b += 3
+else:
+    a -= 2
+    b *= 2
+print("Example 2:", a, b)
+
+
+# Example 3
+x = 3
+y = 7
+if x * 2 > y:
+    x = x * 2
+    y = y - 1
+else:
+    y = y + 3
+    x = y - x
+print("Example 3:", x, y)
+
+
+
+# Example 4
+p = 12
+q = 3
+if p / q == 4:
+    p = p + q
+else:
+    p = p - q
+print("Example 4:", p, q)
+
+# Example 5
+x = 11
+y = 8
+if x % 2 == 0:
+    y = y + 1
+else:
+    x = x + 2
+    y = y - 2
+print("Example 5:", x, y)
+
+
+# Example 6
+a = 5
+b = 15
+if a > 2 and b < 20:
+    a = a * 2
+    b = b - 5
+else:
+    a = a + b
+print("Example 6:", a, b)
+
+# Example 7
+x = 4
+y = 9
+if y > x:
+    x = x + y
+    y = y - x
+else:
+    x = x - y
+print("Example 7:", x, y)
+
+
+# Example 8
+a = 8
+b = 12
+if a == b:
+    a = a * b
+else:
+    b = b - a
+print("Example 8:", a, b)
+
+# Example 9
+x = 6
+y = 6
+if x >= y:
+    x = x ** 2
+    y = y + 1
+else:
+    y = y ** 2
+print("Example 9:", x, y)
+
+
+# Example 10
+a = 2
+b = 18
+if b % a == 0:
+    b = b // a
+else:
+    a = b % a
+print("Example 10:", a, b)
+
+# Example 10
+a = 2
+b = 18
+if b % a == 0:
+    b = b // a
+else:
+    a = b % a
+print("Example 10:", a, b)
+
+
+
+### For Loop and while loop
+x="data7"
+for z in x:
+    print(z.isalpha())
+x=[1,2,3,"data",[4,5,6,"Data"]]
+for i in x:
+    print(i)
+    print(len(str(i)))
+"[4,5,6,"Data"]"
+
+
+x="Data science machine leanring"
+for i in x.split():
+    print(len(i))
+
+
+"*"*4
+for i in [1,2,3,4,5]:
+    print("*"*(6-i))
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+
+
+
+for i in [1,2,3,4,5]:
+    print("*"*(i))
+for i in [1,2,3,4,5]:
+    print("*"*(6-i))
+for i in range(1,6):
+    print(i,end=',')
+for i in range(1,6,2):
+    print(i,end=',')
+for i in range(1,50,2):
+    print(i,end=',')
+for i in range(50,1,-2):
+    print(i,end=',')
+for i in range(1,6):
+    print((6-i)*" "+i*"$")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
